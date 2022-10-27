@@ -9,13 +9,13 @@
     
     <body style='margin : 0px; overflow: hidden;'>
         <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
-        <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+        <a-scene embedded arjs>
 
         <a-assets>
             <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf"></a-asset-item>
         </a-assets>
 
-        <a-marker type='pattern' preset="custom" url="https://raw.githubusercontent.com/LeonBonetti/ar-test/main/pattern-C.patt">
+        <a-marker type='pattern' url="https://raw.githubusercontent.com/LeonBonetti/ar-test/main/pattern-C.patt">
             <a-box position='0 0.5 0' color="yellow"></a-box>
         </a-marker>
 
