@@ -15,8 +15,13 @@
             <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf"></a-asset-item>
         </a-assets>
 
+        <a-assets>
+            <img id="huggies" src="https://raw.githubusercontent.com/LeonBonetti/ar-test/main/images/huggies.png">
+        </a-assets>
+
         <a-marker type='barcode' value="23">
-            <a-box position='0 0.5 0' color="yellow"></a-box>
+            <a-box position='0 0.5 0' src="#huggies"></a-box>
+            <!-- <a-entity></a-entity> -->
         </a-marker>
 
         <a-marker id="animated-marker" type='barcode' value='6'>
