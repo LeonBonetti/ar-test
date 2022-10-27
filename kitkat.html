@@ -15,11 +15,13 @@
             <img id="kitkat" src="https://raw.githubusercontent.com/LeonBonetti/ar-test/main/images/kitkat.png">
         </a-assets>
 
-        <a-marker type='barcode' value="26">
+        <a-marker type='barcode' value="23">
             <a-box position='0 0.5 0' src="#kitkat"></a-box>
             <!-- <a-entity></a-entity> -->
         </a-marker>
 
+        <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
+        <a-entity camera></a-entity>
         </a-scene>
     </body>
 </html>
